@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.boody{
+    font-family: 'Forum', cursive;
+    background: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+    height: 750px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    text-align: center;
+    font-weight: 700 bolder;
+    font-size: 50px;
+    font-family: 'Forum', cursive;
+    margin-bottom: 40px;
+}
+
+form{
+    background: #fff;
+    padding: 20px 60px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.form{
+    position: relative;
+    margin: 150%;
+}
+
+.nombre{
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.caja{
+    background: none;
+    color: #7a7878;
+    font-size: 15px;
+    padding: 20px 1px 2px 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid;
+}
+
+input:focus{
+    outline: none;
+    color: #000000;
+}
+
+.boton{
+    font-family: 'Forum', cursive;
+    background: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+    font-weight: bold;
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 300px) {
+    .boody{
+        height: 100%;
+    }
+
+    form{
+        width: 90%;
+    }
+}

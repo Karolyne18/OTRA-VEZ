@@ -1,0 +1,305 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Forum', cursive;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Forum&display=swap');
+
+/* BarNav */
+.contenedor{
+    width: 90%;
+    max-width: 1200px;
+    overflow: hidden;
+    margin: auto;
+    padding: 60px 0;
+}
+
+.hamburguer{
+    position: fixed;
+    top: 30px;
+    left: 30px;
+    background: transparent;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    border-radius: 20%;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+}
+
+.menu-navegacion{
+    position: fixed;
+    top: 0;
+    padding: 30px;
+    left: 0;
+    width: 30vw;
+    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    transition: .5s ease-in;
+    transform: translate(-100%);
+
+    box-shadow: 0 0 6px rgba(0,0,0,.5);
+    cursor: pointer;
+}
+
+.spread{
+    transform: translate(0%);
+}
+
+.listas{
+    display: inline-block;
+    font-size: 25px;
+    padding: 8px;
+}
+
+.listas a{
+    color:#6e2e16;
+    list-style: none;
+    margin-left: 5px;
+    width: max-content
+}
+
+/* Titulo */
+.contenedor-header{
+    height: 100vh;
+    background-image: linear-gradient(to top, rgba(199, 144, 129, 0.533) 0%, rgba(223, 165, 121, 0.449) 100%), url(fondoestudio.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.titulo{
+    font-size: 100px;
+    background-color: rgba(252, 216, 109, 0.493);
+    color: #70540e;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.title{
+    font-size: 50px;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.subtitulo{
+    text-align: center;
+    font-weight: 300;
+    color: #6e2e16;
+    font-size: 60px;
+}
+
+/* Sobre mi */
+.cont-yo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.cont-yo img{
+    width: 35%;
+}
+
+.copy-yo{
+    width: 60%;
+    font-size: 25px;
+}
+
+/* Proyecto */
+.cont-proyecto{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.cont-proyecto img{
+    width: 30%;
+}
+
+.copy-history{
+    width: 100%;
+    font-size: 20px;
+}
+
+/* Mis Didis Plantillas */
+/*Instrucciones*/
+.cont-instruccion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.cont-instruccion img{
+    width: 40%;
+}
+
+.copy-instruccion{
+    width: 100%;
+    font-size: 25px;
+}
+
+/*Descarga*/
+.clase2021{
+    font-size: 30px;
+    color: #461c0d;
+    margin-top: 10px;
+}
+
+a{
+    margin-left: 15px;
+    font-size: 20px;
+    margin-bottom: 10px;
+
+}
+
+a:hover{
+    color: #6e2e16;
+    background-color: #f9df8b;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+/* Contacto */
+.social-media{
+    color:#70540e;
+    display: inline-block;
+    margin-left: 43%;
+    text-align: start;
+    font-size: 20px;
+}
+
+.social{
+    color: #70540e;
+    font-size: 20px;
+}
+
+.linea{
+    margin-bottom: 15px;
+    padding: 5px;
+    box-shadow: 0 0 6px rgba(0,0,0,.5);
+    border-radius: 10px;
+}
+
+/* Copyrigth */
+.texto-final{
+    padding: 15px;
+    margin-top: 20px;
+    background: #f6d365;
+    text-align: center;
+    font-size: 20px;
+    color:#70540e;
+}
+
+/* Tamaño Dispositivos */
+@media screen and (max-width: 700px){
+    .menu-navegacion{
+        width: 70vw;
+    }
+
+    .hamburguer{
+        width: 100px;
+        height: 100px;
+    }
+
+    .listas a{
+        font-size: 20px;
+    }
+
+    .title{
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .titulo{
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .subtitulo{
+        font-size: 50px;
+    }
+
+    .cont-yo img{
+        width: 90%;
+    }
+    
+    .copy-yo{
+        width: 90%;
+    }
+   
+    .cont-proyecto img{
+        width: 30%;
+        margin-bottom: 20px;
+    }
+    
+    .copy-history{
+        width: 100%;
+        font-size: 20px;
+    }
+
+    .cont-instruccion img{
+        width: 90%;
+    }
+
+    .copy-instruccion{
+        width: 90%;
+        font-size: 20px;
+    }
+
+    .clase2021{
+        font-size: 25px;
+    }
+
+    a{
+        margin-left: 15px;
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .social-media{
+        margin-left: 20%;
+    }
+    
+    .linea{
+        margin-bottom: 15px;
+        padding: 2px;
+        width: 95%;
+        box-shadow: 0 0 6px rgba(0,0,0,.5);
+    }
+
+    .texto-final{
+        font-size: 17px;
+    }
+
+}
+
+
+
+
+
+
+
